@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>VERAA · Content · Ambassador</title>
+<meta name="description" content="Veraa (@IamVeeraa_). Web3 content creator and brand ambassador. Open for paid work." />
+<meta property="og:image" content="assets/avatar.jpg" />
+<style>
+  :root { --bg:#06101f; --card:#0c1a33; --card2:#12264a; --line:#1d3d6e; --gold:#4169e1; --gold2:#c7d6ff; --text:#f4f7ff; --mute:#c9d6f0; --soft:#7f96be; }
+  [data-theme="light"] { --bg:#f5f8ff; --card:#fff; --card2:#e7eeff; --line:#d4e0f8; --gold:#2746b8; --gold2:#1e3a8a; --text:#0b1730; --mute:#3d5274; --soft:#7f96be; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:Inter,system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.55; }
+  .wrap { width:min(1080px, calc(100% - 36px)); margin:0 auto; }
+  a { color:inherit; text-decoration:none; } img { display:block; max-width:100%; }
+  header { position:sticky; top:0; z-index:20; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:blur(14px); border-bottom:1px solid var(--line); }
+  .nav { display:flex; align-items:center; justify-content:space-between; padding:14px 0; }
+  .logo { letter-spacing:.18em; font-size:12px; color:var(--gold2); font-weight:700; }
+  nav { display:flex; gap:18px; align-items:center; font-size:13px; color:var(--mute); }
+  .tog { border:1px solid var(--line); background:transparent; color:var(--mute); border-radius:999px; padding:6px 12px; font-size:11px; letter-spacing:.08em; text-transform:uppercase; cursor:pointer; }
+  .hero { display:grid; grid-template-columns:1.1fr .9fr; gap:48px; align-items:center; padding:72px 0 48px; }
+  .avail { color:var(--gold2); font-size:12px; letter-spacing:.16em; text-transform:uppercase; margin-bottom:18px; font-weight:700; }
+  h1 { font-size:clamp(56px, 9vw, 96px); font-weight:800; letter-spacing:-.05em; line-height:.88; margin-bottom:14px; }
+  .sub, .lead, .stat span, .card p, .work p { color:var(--mute); }
+  .sub { margin-bottom:22px; } .sub b { color:var(--gold2); }
+  .obj { max-width:540px; border-left:3px solid var(--gold); background:rgba(65,105,225,.14); padding:16px 18px; border-radius:0 12px 12px 0; }
+  .obj small { display:block; color:var(--gold2); letter-spacing:.14em; font-size:11px; text-transform:uppercase; margin-bottom:6px; font-weight:700; }
+  .row { display:flex; flex-wrap:wrap; gap:10px; margin-top:26px; }
+  .btn { display:inline-flex; border-radius:999px; padding:11px 18px; font-size:14px; font-weight:600; border:1px solid var(--line); background:var(--card); }
+  .fill { background:var(--gold); color:#fff; border-color:var(--gold); }
+  .portrait, .stat, .card, .work { background:var(--card); border:1px solid var(--line); border-radius:18px; }
+  .portrait { padding:14px; border-radius:28px; }
+  .portrait img { width:100%; border-radius:20px; aspect-ratio:1; object-fit:cover; object-position:top; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+  .chip { font-size:12px; color:var(--gold2); border:1px solid var(--line); border-radius:999px; padding:6px 10px; font-weight:600; }
+  section { padding:28px 0 8px; }
+  .kicker { color:var(--gold2); letter-spacing:.14em; font-size:12px; font-weight:700; margin-bottom:8px; }
+  h2 { font-size:clamp(28px, 4vw, 40px); letter-spacing:-.04em; margin-bottom:12px; }
+  .lead { max-width:720px; margin-bottom:18px; }
+  .stats, .grid2, .grid3 { display:grid; gap:12px; }
+  .stats { grid-template-columns:repeat(3,1fr); } .grid2 { grid-template-columns:1fr 1fr; } .grid3 { grid-template-columns:repeat(3,1fr); }
+  .stat, .card, .work { padding:18px; }
+  .stat strong { display:block; font-size:28px; }
+  .work { margin-bottom:12px; }
+  .work a { color:var(--gold2); font-weight:600; font-size:13px; display:inline-block; margin-top:12px; }
+  .quote { margin:22px 0; padding:22px; border-radius:18px; background:var(--card2); border:1px solid var(--line); font-size:18px; }
+  .quote small { display:block; margin-top:8px; color:var(--mute); font-size:13px; }
+  .hire { text-align:center; padding:42px 0 64px; }
+  footer { border-top:1px solid var(--line); color:var(--soft); font-size:13px; display:flex; justify-content:space-between; padding:18px 0 28px; }
+  @media (max-width:800px) { .hero, .grid3, .grid2, .stats { grid-template-columns:1fr; } nav a { display:none; } }
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="logo" href="#top">VERAA</a><nav><a href="#work">Work</a><a href="#hire">Hire</a><button class="tog" id="theme" type="button">Light</button></nav></div></header>
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <p class="avail">Open for paid work and collabs</p>
+      <h1>VERAA</h1>
+      <p class="sub">Content <b>·</b> Ambassador <b>·</b> Campaigns</p>
+      <div class="obj"><small>// objective_</small>Great products, given the attention they deserve. The update, written so a person can finish it.</div>
+      <div class="row"><a class="btn fill" href="https://x.com/IamVeeraa_" target="_blank" rel="noopener">DM on X</a><a class="btn" href="https://t.me/Veraa0xx" target="_blank" rel="noopener">Telegram</a></div>
+    </div>
+    <div class="portrait"><img src="assets/avatar.jpg" alt="Veraa" /><div class="chips"><span class="chip">@IamVeeraa_</span><span class="chip">1.2K on X</span><span class="chip">7 campaigns</span></div></div>
+  </section>
+  <section>
+    <p class="kicker">// about_</p><h2>Who I am</h2>
+    <p class="lead">Web3 content creator and brand ambassador. X posts, threads, community engagement, and campaign work that makes the product easier to understand.</p>
+    <p class="lead">Open for ambassador seats, content collabs, and campaign partnerships.</p>
+    <div class="stats"><div class="stat"><strong>1.2K</strong><span>X followers</span></div><div class="stat"><strong>257</strong><span>Likes on Jumper</span></div><div class="stat"><strong>8.9K</strong><span>Views on that post</span></div></div>
+  </section>
+  <section>
+    <p class="kicker">// what you are hiring_</p><h2>What I offer</h2>
+    <div class="grid3">
+      <article class="card"><h3>Content</h3><p>Posts, threads, and explainers. The product, in a line people finish.</p></article>
+      <article class="card"><h3>Ambassador</h3><p>Campaign seats and quote posts. The update, carried further.</p></article>
+      <article class="card"><h3>Research</h3><p>The read before the post. Strategy support when the campaign needs a plan.</p></article>
+    </div>
+  </section>
+  <section id="work">
+    <p class="kicker">// proof_</p><h2>Selected work</h2>
+    <div class="grid2">
+      <article class="work"><p class="kicker">JUMPER · 257 LIKES</p><h3>Advanced, in plain steps</h3><p>Preview, slippage, limit orders. 8.9K views, 106 replies.</p><a href="https://x.com/IamVeeraa_/status/2085235968789926324" target="_blank" rel="noopener">Open the post →</a></article>
+      <article class="work"><p class="kicker">BYZANLINK · 182 LIKES</p><h3>Issuance is not the finish</h3><p>The operating layer after the token. 5.7K views.</p><a href="https://x.com/IamVeeraa_/status/2080729295131922488" target="_blank" rel="noopener">Open the piece →</a></article>
+      <article class="work"><p class="kicker">AXIS · 165 LIKES</p><h3>Robots need more than one scene</h3><p>Physical AI, and the data under it. 7.4K views, 51 reposts.</p><a href="https://x.com/IamVeeraa_/status/2097564564778893777" target="_blank" rel="noopener">Open the post →</a></article>
+      <article class="work"><p class="kicker">CARDRADAR · 161 LIKES</p><h3>Stop checking apps one by one</h3><p>Rates, payout speed, reviews. 4.2K views, 55 reposts.</p><a href="https://x.com/IamVeeraa_/status/2101910619591004544" target="_blank" rel="noopener">Open the post →</a></article>
+      <article class="work"><p class="kicker">KAIROS · 140 LIKES</p><h3>One terminal for the future</h3><p>Prediction markets, without the tab switch. 2.3K views.</p><a href="https://x.com/IamVeeraa_/status/2077437149759328569" target="_blank" rel="noopener">Open the piece →</a></article>
+      <article class="work"><p class="kicker">BOUNCE · 129 LIKES</p><h3>Leverage, without the perp desk</h3><p>A token that rebalances itself. 3.0K views.</p><a href="https://x.com/IamVeeraa_/status/2099733034073276719" target="_blank" rel="noopener">Open the post →</a></article>
+      <article class="work"><p class="kicker">BUDSIGNAL · 92 LIKES</p><h3>Long, short, or wait</h3><p>Three reads, not a wall of indicators. 3.3K views.</p><a href="https://x.com/IamVeeraa_/status/2099058034697699786" target="_blank" rel="noopener">Open the post →</a></article>
+    </div>
+    <div class="quote">“Great article veera.”<small>On the Kairos piece. The rest of the page is the same job.</small></div>
+  </section>
+  <section class="hire" id="hire">
+    <p class="kicker">// let’s work_</p><h2>Open for paid work</h2>
+    <p class="lead">An ambassador seat, a campaign, or a content collab.</p>
+    <div class="row" style="justify-content:center"><a class="btn fill" href="https://x.com/IamVeeraa_">@IamVeeraa_</a><a class="btn" href="https://t.me/Veraa0xx">t.me/Veraa0xx</a></div>
+  </section>
+</main>
+<footer class="wrap"><span>VERAA</span><span>@IamVeeraa_ · t.me/Veraa0xx</span></footer>
+<script>const btn=document.getElementById("theme");btn.onclick=()=>{const l=document.body.dataset.theme==="light";document.body.dataset.theme=l?"":"light";btn.textContent=l?"Light":"Dark";};</script>
+</body>
+</html>
